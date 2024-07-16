@@ -18,7 +18,7 @@ function App() {
             <Header />
             <Routes>
                 <Route index element={<ProductList />}/>
-                <Route path={'form'} element={<Form />}/>
+                <Route path={'form'} exact={true} element={<Form />}/>
             </Routes>
         </div>
     );
