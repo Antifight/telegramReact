@@ -26,7 +26,7 @@ const Form = () => {
 
     useEffect(() => {
         tg.MainButton.setParams({
-            text: 'Send data'
+            text: 'Отправить данные'
         })
     }, [])
 
@@ -52,24 +52,24 @@ const Form = () => {
 
     return (
         <div className={"form"}>
-            <h3>Enter your information.</h3>
+            <h3>Введите ваши данные</h3>
             <input
                 className={'input'}
                 type="text"
-                placeholder={'Country'}
+                placeholder={'Страна'}
                 value={country}
                 onChange={onChangeCountry}
             />
             <input
                 className={'input'}
                 type="text"
-                placeholder={'Street'}
+                placeholder={'Улица'}
                 value={street}
                 onChange={onChangeStreet}
             />
             <select value={subject} onChange={onChangeSubject} className={'select'}>
-                <option value={'physical'}>Individual (private person)</option>
-                <option value={'legal'}>Legal entity</option>
+                <option value={'physical'}>Физ. лицо</option>
+                <option value={'legal'}>Юр. лицо</option>
             </select>
         </div>
     );
